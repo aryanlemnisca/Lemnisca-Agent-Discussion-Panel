@@ -27,7 +27,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <nav className="border-b px-8 py-3 flex items-center gap-6">
+          <a href="/" className="font-bold">Lemnisca Panel</a>
+          <a href="/templates" className="text-sm text-muted-foreground hover:text-foreground">Templates</a>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
