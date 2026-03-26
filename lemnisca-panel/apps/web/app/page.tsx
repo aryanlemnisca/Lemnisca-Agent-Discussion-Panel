@@ -38,7 +38,7 @@ export default function Dashboard() {
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-2xl font-bold">Projects</h1>
         <Dialog open={open} onOpenChange={setOpen}>
-          <DialogTrigger asChild>
+          <DialogTrigger>
             <Button>New Project</Button>
           </DialogTrigger>
           <DialogContent>
